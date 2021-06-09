@@ -1,0 +1,115 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  font-family: cursive ,sans-serif;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom ,rgba( 0, 0, 0, 0.5),
+   rgba( 0, 0, 0, 0.8) );
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+header input {
+  font-family: cursive ,sans-serif;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px ;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: rgba( 255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid rgb(200, 245, 94);
+  box-shadow: 0px 10px 100px 15px rgb(200 245 94);
+}
+
+header input:focus {
+  background: rgba( 255, 255, 255, 0.6);
+}
+
+main {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(200, 245, 94);
+}
+
+.location {
+  margin-bottom: 20px;
+  color: rgb(251, 224, 67);
+  text-shadow: 5px 5px 50px rgba(251, 224, 67, 0.8);
+}
+
+.location .city {
+  font-size: 40px;
+  font-weight: 700;
+  
+}
+
+.location .date {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.current .temp {
+  font-size: 85px;
+  font-weight: 900;
+  text-shadow: 5px 5px 50px  ;
+}
+
+.current .temp span {
+  font-weight: 500;
+  text-shadow: 5px 5px 50px  ;
+}
+
+.current .low_hi {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.low_hi .low {
+  color: rgba(94, 210 , 245 , 1);
+  text-shadow: 10px 5px 20px rgba(94, 210 , 245 , 0.7);
+} 
+
+.low_hi .hi {
+  color: rgba(245, 94, 119, 1);
+  text-shadow: 10px 5px 20px rgba(245, 94, 119 , 0.7);
+}
+
+.current .weather {
+  color: rgb(251, 224, 67);
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 5px 5px 50px rgba(251, 224, 67, 0.8);
+  margin-bottom: 10px;
+}
+
+.current .icon img{
+  width: 150px;
+  height: 150px;
+  background-color: rgba(31, 20, 20, 0.363);
+  border-radius: 100%;
+}
