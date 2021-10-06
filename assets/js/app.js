@@ -1,4 +1,4 @@
-// Free API for this : https://openweathermap.org/api
+// Free API that I used : https://openweathermap.org/api
 
 const api = {
   key: '***', // your APIkey 
